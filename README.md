@@ -1,2 +1,2 @@
 # challenge-cocotalk
-Html5, css
+HTML5, CSS
