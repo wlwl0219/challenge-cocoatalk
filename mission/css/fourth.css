@@ -1,0 +1,76 @@
+body {
+  background-color: #6cbbbe;
+}
+
+main {
+  width: 70px;
+  margin: 0 auto;
+}
+
+.dot {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  animation: dotAnimation 1.1s ease-in-out infinite;
+}
+
+@keyframes dotAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.dot > div {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+@keyframes boxAnimation {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  75% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.boxchild {
+  width: 9px;
+  height: 33px;
+  background-color: white;
+  animation: boxAnimation 1s ease-in-out infinite;
+}
+
+.delay2 {
+  animation-delay: 0.2s;
+}
+.delay3 {
+  animation-delay: 0.3s;
+}
+.delay4 {
+  animation-delay: 0.4s;
+}
+.delay5 {
+  animation-delay: 0.5s;
+}
