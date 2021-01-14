@@ -1,0 +1,136 @@
+.card {
+  border: 5px solid #2ac6ac;
+  width: 330px;
+  height: 100%;
+  padding: 20px 20px;
+}
+
+.header {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+.header__text {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.random {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.random__icon {
+  color: white;
+  background-color: #fcbd12;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 15%;
+}
+
+.random__text {
+  margin-left: 20px;
+}
+
+.random__text span {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.random__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.random__description {
+  color: #2e3033;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn__play {
+  width: 150px;
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 5px black;
+}
+
+.btn__play > span {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn__circle {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 5px black;
+}
+
+.nikname {
+  margin-top: 40px;
+}
+
+.nikname__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.box__color {
+  width: 50px;
+  height: 50px;
+  background-color: #f85a2a;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.box__text span {
+  display: block;
+}
+
+.box__title {
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+
+.box__name {
+  color: gray;
+}
+
+.color-pink {
+  background-color: #fc89bb;
+}
+
+.color-blue {
+  background-color: #1f47e5;
+}
+
+.color-green {
+  background-color: #2ac6ac;
+}
