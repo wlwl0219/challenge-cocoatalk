@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Tamma 2", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 310px;
+}
+
+.navbar {
+  background-color: #fece32;
+  padding: 30px 15px 50px 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.navbar__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__contents > h1 {
+  font-size: 18px;
+}
+
+.searh__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 270px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  position: absolute;
+  top: 75px;
+}
+
+.searh__contents input {
+  border: none;
+}
+
+.searh__contents input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.searh__contents input:focus {
+  outline: none;
+}
+
+.searh__contents i {
+  margin-left: 20px;
+  opacity: 0.4;
+}
+
+.main-contents {
+  padding: 50px 20px 50px 15px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.book__contents {
+  display: flex;
+}
+
+.book__contents img {
+  width: 110px;
+  height: 160px;
+}
+
+.contents__manu {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.mamu__title {
+  font-size: 18px;
+}
+
+.mamu__description {
+  font-size: 15px;
+  margin-top: 10px;
+  opacity: 0.4;
+}
+
+.star {
+  margin-top: 10px;
+  color: #fece32;
+}
+
+.tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tag p {
+  background-color: #f7f7f7;
+  padding: 7px;
+  font-size: 13px;
+}
+
+.btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fece32;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.btn__input {
+  font-size: 11px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.top {
+  margin-top: 30px;
+}
+
+.top__contents {
+  display: flex;
+}
+
+.content__poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.content__poster img {
+  width: 75px;
+  height: 110px;
+}
+
+.popular {
+  margin-top: 30px;
+}
+
+.popular__contents {
+  display: flex;
+  align-items: center;
+}
+
+.popular__contents img {
+  width: 105px;
+  height: 130px;
+}
+
+.contents__text {
+  margin-left: 20px;
+}
