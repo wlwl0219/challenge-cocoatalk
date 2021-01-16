@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Tamma 2", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(65deg, #acb6e5, #74ebd5);
+}
+
+.page {
+  width: 310px;
+  height: 600px;
+  background-color: white;
+  padding: 30px 15px 15px 15px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.first {
+  margin-right: 80px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.profile > img {
+  width: 70px;
+  height: 65px;
+  border-radius: 50%;
+  box-shadow: rgba(92, 88, 86, 0.5) 0px 7px 29px 0px;
+  margin-bottom: 30px;
+}
+
+.profile > h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.profile > span {
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.reaction__shuffle {
+  width: 90px;
+  height: 33px;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  padding-top: 3px;
+  margin-right: 30px;
+}
+
+.reaction__heart > span {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.list {
+  width: 210px;
+  height: 212px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.song > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.song__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95%;
+  margin-left: -50px;
+}
+
+.song__text > span {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.song__text > p {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.play {
+  margin-top: 10px;
+}
+.play__box {
+  background-color: #222222;
+  color: white;
+  width: 250px;
+  height: 55px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.box-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 73px;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+}
+
+.box-text > span {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.box-text > p {
+  font-weight: 600;
+  font-size: 15px;
+}
+.song__select {
+  position: relative;
+}
+.song__select > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  display: block;
+}
+
+.song__select > i {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  color: white;
+  z-index: 1;
+}
+
+.hover {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0%;
+  border-radius: 7px;
+}
+
+.album {
+  margin-top: 60px;
+}
+
+.album > img {
+  width: 195px;
+  height: 195px;
+  border-radius: 10px;
+  box-shadow: rgba(92, 88, 86, 0.5) 0px 7px 29px 0px;
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title > h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.title > span {
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.range {
+  width: 230px;
+}
+
+.range__time {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.rang__step {
+  width: 230px;
+}
+
+.music {
+  width: 215px;
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: #222222;
+  height: 2px;
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 7px;
+  height: 7px;
+  background: #222222;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 7px;
+  height: 7px;
+  background: #222222;
+  border-radius: 50%;
+}
