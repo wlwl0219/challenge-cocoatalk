@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
-* {
-  box-sizing: border-box;
-}
 
 body {
   font-family: "Baloo Tamma 2", cursive;
@@ -13,19 +10,12 @@ body {
 
 .app {
   border: 1px solid rgba(0, 0, 0, 0.3);
-  width: 310px;
-}
-
-.navbar {
-  background-color: #fece32;
-  padding: 30px 15px 50px 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
+  width: 330px;
 }
 
 .navbar__contents {
+  background-color: #fece32;
+  padding: 30px 15px 50px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,38 +25,39 @@ body {
   font-size: 18px;
 }
 
-.searh__contents {
+.navbar__searh {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0px 20px;
+  margin: 0px auto;
   background-color: white;
   width: 270px;
   height: 45px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 30px;
-  position: absolute;
-  top: 75px;
+  position: relative;
+  top: -20px;
 }
 
-.searh__contents input {
+.navbar__searh input {
   border: none;
 }
 
-.searh__contents input::placeholder {
+.navbar__searh input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.searh__contents input:focus {
+.navbar__searh input:focus {
   outline: none;
 }
 
-.searh__contents i {
-  margin-left: 20px;
+.navbar__searh i {
   opacity: 0.4;
 }
 
 .main-contents {
-  padding: 50px 20px 50px 15px;
+  padding: 20px 20px;
 }
 
 .title {
@@ -77,6 +68,7 @@ body {
 
 .book__contents {
   display: flex;
+  align-items: center;
 }
 
 .book__contents img {
@@ -90,17 +82,18 @@ body {
 }
 
 .mamu__title {
+  font-weight: 600;
   font-size: 18px;
 }
 
 .mamu__description {
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 3px;
   opacity: 0.4;
 }
 
 .star {
-  margin-top: 10px;
+  margin-top: 5px;
   color: #fece32;
 }
 
@@ -108,17 +101,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .tag p {
   background-color: #f7f7f7;
-  padding: 7px;
+  padding: 10px 15px;
   font-size: 13px;
 }
 
 .btn {
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,7 +133,7 @@ body {
   background-color: black;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 .top {
@@ -149,22 +142,25 @@ body {
 
 .top__contents {
   display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .content__poster {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
 }
+
 .content__poster img {
-  width: 75px;
+  width: 85px;
   height: 110px;
 }
 
 .popular {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .popular__contents {
@@ -173,7 +169,7 @@ body {
 }
 
 .popular__contents img {
-  width: 105px;
+  width: 100px;
   height: 130px;
 }
 
