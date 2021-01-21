@@ -1,25 +1,32 @@
+body {
+  background-color: #2ac6ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
 .card {
-  border: 5px solid #2ac6ac;
   width: 330px;
-  height: 100%;
-  padding: 20px 20px;
+  padding: 50px 20px 10px 20px;
+  background-color: white;
 }
 
 .header {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 65%;
 }
+
 .header__text {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
 }
 
 .random {
-  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -38,48 +45,28 @@
 
 .random__text {
   margin-left: 20px;
-}
-
-.random__text span {
-  display: block;
-  margin-bottom: 7px;
+  font-weight: bold;
+  width: 50%;
 }
 
 .random__title {
   font-size: 30px;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .random__description {
-  color: #2e3033;
-  font-weight: bold;
+  opacity: 0.7;
 }
 
-.btn {
+.btns {
   margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.btn__play {
-  width: 150px;
-  height: 50px;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0 5px black;
-}
-
-.btn__play > span {
-  margin-left: 10px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.btn__circle {
+.btns__btn {
   height: 50px;
   width: 50px;
   border: 2px solid black;
@@ -90,8 +77,15 @@
   box-shadow: 0 5px black;
 }
 
-.nikname {
-  margin-top: 40px;
+.btn__play {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.btn__play > span {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .nikname__box {
@@ -103,7 +97,6 @@
 .box__color {
   width: 50px;
   height: 50px;
-  background-color: #f85a2a;
   border: 2px solid black;
   border-radius: 10px;
   margin-right: 20px;
@@ -115,12 +108,16 @@
 
 .box__title {
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
   margin-bottom: 7px;
 }
 
 .box__name {
-  color: gray;
+  opacity: 0.8;
+}
+
+.color-orange {
+  background-color: #f85a2a;
 }
 
 .color-pink {
