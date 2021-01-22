@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -21,7 +22,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.first {
+.page:first-child {
   margin-right: 80px;
 }
 
@@ -32,9 +33,14 @@ header {
   opacity: 0.8;
 }
 
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .profile {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
@@ -42,8 +48,8 @@ header {
 }
 
 .profile > img {
-  width: 70px;
-  height: 65px;
+  width: 80px;
+  height: 75px;
   border-radius: 50%;
   box-shadow: rgba(92, 88, 86, 0.5) 0px 7px 29px 0px;
   margin-bottom: 30px;
@@ -58,12 +64,6 @@ header {
 .profile > span {
   font-size: 15px;
   opacity: 0.5;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .reaction {
@@ -94,7 +94,7 @@ main {
 
 .list {
   width: 210px;
-  height: 212px;
+  height: 210px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -133,6 +133,7 @@ main {
 .play {
   margin-top: 10px;
 }
+
 .play__box {
   background-color: #222222;
   color: white;
@@ -168,9 +169,11 @@ main {
   font-weight: 600;
   font-size: 15px;
 }
+
 .song__select {
   position: relative;
 }
+
 .song__select > img {
   width: 35px;
   height: 35px;
@@ -256,21 +259,24 @@ input[type="range"] {
   -webkit-appearance: none;
   background: #222222;
   height: 2px;
-  width: 100%;
+}
+
+input[type="range"]:focus {
+  outline: none;
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   background: #222222;
   border-radius: 50%;
 }
 
 input[type="range"]::-moz-range-thumb {
-  -webkit-appearance: none;
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   background: #222222;
   border-radius: 50%;
+  border: none;
 }
